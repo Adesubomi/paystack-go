@@ -25,7 +25,7 @@ Use descriptive branch names:
 - feature/transaction-initialize
 - chore/docs-update
 
-### 🧪 Testing
+### 3. Testing
 All code must include tests.
 - Run tests with:
     ```bash
@@ -35,7 +35,7 @@ All code must include tests.
 - Ensure new features maintain or increase coverage.
 - Do not hit the real Paystack API during tests — use mocks or test servers.
 
-### 🧰 Coding Guidelines
+### 4. Coding Guidelines
 - Follow idiomatic Go conventions (gofmt, go vet).
 - Do not expose unnecessary types or functions.
 - All exported symbols must have clear, concise comments using the GoDoc format.
@@ -43,10 +43,21 @@ All code must include tests.
 - Return (value, error) consistently.
 - Avoid adding heavy dependencies.
 
-### 🌱 Commit Messages
-- Use clear, descriptive commit messages.
+### 5. Commit Messages
+- Use clear, descriptive commit messages
+- For improved clarity, the use multi-line commits are favored and highly recommended. Here is an example
+  ```text
+  Payment Initialization
+  
+  This feature handles the processes required to initialize a payment request.
+    
+  Sub-features include:
+  - Validating the request payload before sending it to the API.
+  - Creating the HTTP request and attaching authentication headers.
+  - Sending the request to the Paystack initialization endpoint.
+  ```
 
-### 🔍 Pull Requests
+### 6. Pull Requests
 Before opening a PR:
 1. Ensure your branch is rebased on main.
 2. Ensure tests pass.
