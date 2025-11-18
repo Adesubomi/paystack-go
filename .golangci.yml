@@ -1,0 +1,34 @@
+version: "2"
+
+linters:
+  default: standard
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+    - golines
+    - swaggo
+
+  exclusions:
+    warn-unused: true
+    generated: strict
+    paths:
+      - ".*\\.gen\\.go$"
+
+run:
+  timeout: 1m
+  allow-parallel-runners: true
+  allow-serial-runners: true
+
+output:
+  show-stats: true
+
+severity:
+  default: error
+  rules:
+    - linters:
+        - dupl
+      severity: info
