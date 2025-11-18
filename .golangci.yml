@@ -2,6 +2,12 @@ version: "2"
 
 linters:
   default: standard
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - ineffassign
+    - unused
 
 formatters:
   enable:
@@ -24,6 +30,9 @@ run:
 
 output:
   show-stats: true
+  formats:
+    text:
+      path: stdout
 
 severity:
   default: error
