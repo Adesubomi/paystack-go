@@ -16,24 +16,6 @@ A Go SDK for interacting with the Paystack API. This project is not stable and i
 
 ---
 
-## Installation
-
-<Installation instructions will be added here as the SDK matures.>
-
----
-
-## Usage
-
-<Usage examples and API reference will be added here.>
-
----
-
-## Features
-
-<Feature list and explanations will be added here.>
-
----
-
 ## Code Quality
 
 We use **golangci-lint** under the hood to maintain code quality, enforce consistent formatting, and catch potential issues early.
